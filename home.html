@@ -3,9 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizza Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pizza Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Khuyến Mãi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pizza
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Truyền Thống</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Công Thức Đặc Biệt</a></li>
+                        <li><a class="dropdown-item" href="#">Hải Sản Cao Cấp</a></li>
+                        <li><a class="dropdown-item" href="#">Thập Cẩm Cao Cấp</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Mỳ Ý</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Khai vị</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Thức Uống</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Salad</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="http://thepizzacompany.vn/images/thumbs/000/0004223_TPC_Birthday_WebsiteBanner_1200x480px.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="http://thepizzacompany.vn/images/thumbs/000/0003859_50PizzaT2_WebBanner_(W1200xH480)px.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="http://thepizzacompany.vn/images/thumbs/000/0004196_TPC_BannerWeb_NYC-50_1200Wx480Hpx.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="combo-khuyenmai">
+        <h1>Combo, Khuyến mãi</h1>
+
+        <div class="row row-cols-1 row-cols-md-5 g-5">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://thepizzacompany.vn/images/thumbs/000/0004329_ngon-qua-2-oi_300.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Ngon Quá 2 Ơi!</h5>
+                        <a href="#" class="btn btn-primary">Mua ngay | 279.000đ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://thepizzacompany.vn/images/thumbs/000/0004331_ngon-lam-3-a_500.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Ngon Lắm 3 À!</h5>
+                        <a href="#" class="btn btn-primary">Mua ngay | 359.500đ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://thepizzacompany.vn/images/thumbs/000/0004332_4-oi-ngon-xiu_300.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo 4 Ơi Ngon Xỉu!</h5>
+                        <a href="#" class="btn btn-primary">Mua ngay | 469.000đ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://thepizzacompany.vn/images/thumbs/000/0004333_ca-nha-cung-ngon_300.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Cả Nhà Cùng Ngon!</h5>
+                        <a href="#" class="btn btn-primary">Mua ngay | 679.000đ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
